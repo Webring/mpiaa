@@ -1,4 +1,4 @@
-#define TESTING false
+#define TESTING true
 
 #if TESTING == true
 #include "duplicates.h"
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
 #include "chrono"
 #include "duplicates.h"
 
-#define NUMBER_OF_VALUES 100000
+#define NUMBER_OF_VALUES 10000
 
 using namespace std;
 using namespace std::chrono;

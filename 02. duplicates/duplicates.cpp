@@ -3,7 +3,7 @@
 #include "set"
 #include "algorithm"
 
-#define USE_OPTIMAL_ALGORITHM false
+#define USE_OPTIMAL_ALGORITHM true
 
 using namespace std;
 
