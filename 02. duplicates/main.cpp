@@ -1,18 +1,3 @@
-#define TESTING true
-
-#if TESTING == true
-#include "duplicates.h"
-
-#define CATCH_CONFIG_RUNNER
-
-#include "../catch.hpp"
-
-int main(int argc, char **argv) {
-    int result = Catch::Session().run(argc, argv);
-    return result;
-}
-#else
-
 #include "iostream"
 #include "chrono"
 #include "duplicates.h"
@@ -55,5 +40,3 @@ int main() {
     cout << "get time: " << get_duplicates_duration << endl;
     return 0;
 }
-
-#endif

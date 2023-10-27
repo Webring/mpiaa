@@ -1,18 +1,5 @@
 #include "closest_pair.h"
 
-#define TESTING false
-
-#if TESTING == true
-
-#define CATCH_CONFIG_RUNNER
-#include "../catch.hpp"
-
-int main(int argc, char **argv) {
-    int result = Catch::Session().run(argc, argv);
-    return result;
-}
-#else
-
 #include "iostream"
 #include "chrono"
 
@@ -30,7 +17,7 @@ int main() {
 
     vector<Point> values;
     for (int i = 0; i < NUMBER_OF_VALUES; i++) {
-        double x = random_in_range(-NUMBER_OF_VALUES, NUMBER_OF_VALUES) ;
+        double x = random_in_range(-NUMBER_OF_VALUES, NUMBER_OF_VALUES);
         double y = random_in_range(-NUMBER_OF_VALUES, NUMBER_OF_VALUES);
 
         values.push_back(Point(x, y));
@@ -48,5 +35,3 @@ int main() {
     cout << "total time: " << total_duration << endl;
     return 0;
 }
-
-#endif
